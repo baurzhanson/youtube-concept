@@ -15,6 +15,12 @@ body{
     margin-bottom: 50px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
 }
 
 .menu-button{
@@ -105,8 +111,22 @@ body{
 
 .sidebar{
     padding-left: 32px;
+    position: fixed;
+    top: 114px;
+    left: 0;
+    width: 15%;
+    height: calc(100% - 114px);
+    overflow-y:auto;
 }
 
+.content{
+    width: 100%;
+    height: 400px;
+    padding-top: 30px;
+    padding-left: 17%;
+    margin-top: 85px;
+
+}
 .nav-menu{
     margin-top: 0;
     margin-bottom: 60px;
@@ -147,4 +167,129 @@ body{
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 30px;
+}
+.channel{
+    position: relative;
+    margin-bottom: 50px;
+}
+.channel-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #19202C;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+}
+
+
+.channel-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.channel-text{
+    margin-left: 20px;
+}
+
+.video-card{
+     width: 250px;
+}
+.video-thumb{
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    position:relative;
+}
+
+.thumbnail{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+.video-card-rec{
+    width: 540px;
+}
+
+.thumbnail-rec {
+    width: 540px;
+    height: 250px;
+    object-fit: cover;
+ }
+ 
+.video-duration{
+    position: absolute;
+    bottom :10px;
+    right: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding: 3px 9px;
+}
+
+.video-title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #19202C;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+
+.video-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.video-counter{
+    display: flex;
+  
+}
+.video-views{
+    margin-right: 5px;
+}
+
+.video-views:after{
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #c2c2c2;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.channel-button{
+    cursor: pointer;
+}
+
+.slider-buttons{
+    position: absolute;
+    right: 8%;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+    margin-bottom: 10px;
+}
+
+.channel-desc{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+    margin-left: 13px;
 }
